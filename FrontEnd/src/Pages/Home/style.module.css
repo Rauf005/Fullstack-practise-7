@@ -9,12 +9,136 @@
         background-image: url(https://preview.colorlib.com/theme/podca/images/hero_bg_1.jpg);
         height: 100vh;
         position: relative;
-
+        background-color: rgba(0, 0, 0, 0.4); 
+        background-blend-mode: overlay;
         .herotext{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             position: absolute;
             top:50%;
             left: 50%;
             transform: translate(-50% ,-50%);
+            h1{
+                font-weight: 100;
+                color: white;
+                font-size: 60px;
+            }
+            p{
+                margin: 3% 0;
+                font-size: 16px;
+                color: #cacaca;
+            }
+            button{
+                border: none;
+                background-color: #F23A2E;
+                height: 50px;
+                width: 250px;
+                color: white;
+                border-radius: 5px;
+                font-size: 17px;
+                &:hover{
+                    background-color: #EB1C0F;
+                }
+            }
         }
+    }
+    .behind{
+        width: 80%;
+        margin: 5% auto;
+        display: flex;
+        flex-direction: column;
+        
+        h1{
+            text-align: center;
+            margin-bottom: 4%;
+        }
+        .behcards{
+            
+            gap: 30px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(370px,1fr));
+            .behcard{
+                &:hover .behtext{
+                    transform: scale(1);
+                }
+                position: relative;
+                img{
+                    width: 100%;
+                }
+                .behtext{
+                    top: 0;
+                    transform: scale(0);
+                    display: flex;
+                    position: absolute;
+                    background-color: rgba(235, 28, 15, 0.5);
+                    width: 100%;
+                    height: 100%;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    padding: 20px;
+                    color: white;
+                    transition: 1s;
+
+                    h3{
+                        font-size: 30px;
+                        margin-bottom: 4%;
+                    }
+                    span{
+                        color: rgb(194, 194, 194);
+                        margin-bottom: 4%;
+                    }
+
+                    
+                }
+            }
+        }
+    }
+    .featured{
+        padding: 5% 0;
+        background-color: #F8F9FA;
+        h1{
+            text-align: center;
+            margin-bottom: 5%;
+        }
+       .featcards{
+        width: 80%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(370px,1fr));
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        
+        .featcard{
+            padding: 40px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        align-items: center;
+        div{
+            width: 80%;
+        }
+            img{
+                width: 38%;
+                border-radius: 50%;
+                margin-bottom: 7%;
+            }
+            h2{
+                text-align: center;
+                margin-bottom: 5%;
+            }
+            p{
+                text-align: center;
+                margin-bottom: 10%;
+                color: gray;
+                font-size: 18px;
+                line-height: 1.6;
+            }
+        }
+       }
     }
 }

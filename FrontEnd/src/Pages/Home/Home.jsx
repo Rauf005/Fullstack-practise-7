@@ -12,7 +12,95 @@ function Home() {
             <button>Read The Transcript</button>
         </div>
       </div>
-      
+      <div className={style.behind}>
+        <h1>Behind The Mic</h1>
+        <div className={style.behcards}>
+        <div className={style.behcard}>
+          <img src="https://preview.colorlib.com/theme/podca/images/person_1.jpg" alt="" />
+          <div className={style.behtext}>
+            <h3>Brooke Cagle</h3>
+            <span>Creative Director</span>
+            <p>Lorem ipsum dolor sit amet consectetur <br />
+               adipisicing elit ullam reprehenderit nemo.</p>
+            
+          </div>
+        </div>
+        <div className={style.behcard}>
+          <img src="https://preview.colorlib.com/theme/podca/images/person_2.jpg" alt="" />
+          <div className={style.behtext}>
+            <h3>Brooke Cagle</h3>
+            <span>Creative Director</span>
+            <p>Lorem ipsum dolor sit amet consectetur <br /> adipisicing elit ullam reprehenderit nemo.</p>
+            
+          </div>
+        </div>
+        <div className={style.behcard}>
+          <img src="https://preview.colorlib.com/theme/podca/images/person_3.jpg" alt="" />
+          <div className={style.behtext}>
+            <h3>Brooke Cagle</h3>
+            <span>Creative Director</span>
+            <p>Lorem ipsum dolor sit amet consectetur <br /> adipisicing elit ullam reprehenderit nemo.</p>
+            
+          </div>
+        </div>
+        <div className={style.behcard}>
+          <img src="https://preview.colorlib.com/theme/podca/images/person_4.jpg" alt="" />
+          <div className={style.behtext}>
+            <h3>Brooke Cagle</h3>
+            <span>Creative Director</span>
+            <p>Lorem ipsum dolor sit amet consectetur <br /> adipisicing elit ullam reprehenderit nemo.</p>
+            
+          </div>
+        </div>
+        <div className={style.behcard}>
+          <img src="https://preview.colorlib.com/theme/podca/images/person_5.jpg" alt="" />
+          <div className={style.behtext}>
+            <h3>Brooke Cagle</h3>
+            <span>Creative Director</span>
+            <p>Lorem ipsum dolor sit amet consectetur  <br />adipisicing elit ullam reprehenderit nemo.</p>
+            
+          </div>
+        </div>
+        <div className={style.behcard}>
+          <img src="https://preview.colorlib.com/theme/podca/images/person_6.jpg" alt="" />
+          <div className={style.behtext}>
+            <h3>Brooke Cagle</h3>
+            <span>Creative Director</span>
+            <p>Lorem ipsum dolor sit amet consectetur <br /> adipisicing elit ullam reprehenderit nemo.</p>
+            
+          </div>
+        </div>
+        </div>
+      </div>
+      <div className={style.featured}>
+        <h1>Featured Guests</h1>
+      <div className={style.featcards}>
+      <div className={style.featcard}>
+        <img src="https://preview.colorlib.com/theme/podca/images/person_4.jpg" alt="" />
+        <div>
+        <h2>Steven Ericson</h2>
+        <p>Lorem ipsum dolor sit amet  consectetur adipisicing elit. Architecto  officiis id doloremque ipsum assumenda vel?</p>
+        </div>
+        
+        </div>
+        <div className={style.featcard}>
+        <img src="https://preview.colorlib.com/theme/podca/images/person_5.jpg" alt="" />
+        <div>
+        <h2>Steven Ericson</h2>
+        <p>Lorem ipsum dolor sit amet  consectetur adipisicing elit. Architecto  officiis id doloremque ipsum assumenda vel?</p>
+        </div>
+        
+        </div>
+        <div className={style.featcard}>
+        <img src="https://preview.colorlib.com/theme/podca/images/person_6.jpg" alt="" />
+        <div>
+        <h2>Steven Ericson</h2>
+        <p>Lorem ipsum dolor sit amet  consectetur adipisicing elit. Architecto  officiis id doloremque ipsum assumenda vel?</p>
+        </div>
+        
+        </div>
+        </div>
+      </div>
     </div>
   )
 }

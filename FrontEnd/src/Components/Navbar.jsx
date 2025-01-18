@@ -8,10 +8,10 @@ function Navbar() {
   return (
     <div className={style.navbar}>
       <div className={style.nav}>
-      <h1>Podca</h1>
+      <h1 style={{color:"white"}}>Podca</h1>
       <div>
       <Link to={"/add"}>  <button className={style.add}> Add</button></Link>
-      <h2 className={style.bar}><FaBars /></h2>
+      <h2 style={{color:"white"}} className={style.bar}><FaBars /></h2>
       </div>
 <div className={style.side}>
     <ul>
