@@ -217,3 +217,12 @@
     height: 40px;
     width: 200px;
 }
+.aa{
+    display: flex;
+    gap: 10%;
+
+    select{
+        width: 70px;
+        height: 40px;
+    }
+}

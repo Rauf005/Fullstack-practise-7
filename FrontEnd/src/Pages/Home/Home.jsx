@@ -12,6 +12,7 @@ function Home(product) {
   let {favorite,setFavorite}=useContext(favoriteContext)
   let [searchQuery, setSearchQuery] = useState('')
   let [products,setProducts]=useState([])
+  let [sortOrder, setSortOrder] = useState('');
   function getData(){
     axios.get("http://localhost:3000/musics")
     .then((res)=>{
@@ -39,7 +40,19 @@ function Home(product) {
       }
    }
 
+   const handleSort = (event) => {
+    setSortOrder(event.target.value); 
+  };
 
+ 
+  const sortedProducts = filteredProducts.sort((a, b) => {
+    if (sortOrder === 'A-Z') {
+      return a.name.localeCompare(b.name); 
+    } else if (sortOrder === 'Z-A') {
+      return b.name.localeCompare(a.name); 
+    }
+    return 0; 
+  });
 
   return (
     <div className={style.home}>
@@ -58,10 +71,19 @@ function Home(product) {
         <h1>Recent Podcasts</h1>
         
       <div className={style.podcarts}>
+      <div className={style.aa}>
       <form action="">
           <input style={{marginBottom:"10%"}} value={searchQuery}  onChange={handleSearch} className={style.search} type="text" placeholder='Search'/>
         </form>
-      { filteredProducts.map(product=>(
+
+        <select  id="h" onChange={handleSort}>
+
+          <option disabled value="">Sort</option>
+          <option value="">A-Z</option>
+          <option value="">Z-A</option>
+        </select>
+      </div>
+      { sortedProducts.map(product=>(
       <div className={style.podcart} key={product._id}>
       <div className={style.podimage}>
         <img src={product.image} alt="" />
