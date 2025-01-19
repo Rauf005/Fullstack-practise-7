@@ -1,0 +1,57 @@
+.podcarts {
+  width: 80%;
+  margin: 5% auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .podcart {
+    margin-bottom: 5%;
+    display: flex;
+    gap: 30px;
+    background-color: white;
+    .podimage {
+      width: 25%;
+      img {
+        width: 100%;
+      }
+    }
+    .podtext {
+      padding: 10px;
+
+      h2 {
+        color: #eb1c0f;
+        margin-bottom: 2%;
+      }
+      p {
+        margin: 3% 0;
+        font-size: 18px;
+      }
+      .musicplayer {
+        background-color: black;
+        padding: 10px;
+        display: flex;
+        .controls {
+          display: flex;
+          justify-content: space-between;
+
+          #playpause {
+            margin-right: 5%;
+            margin-left: 5%;
+            color: white;
+          }
+          span {
+            margin: 0 3%;
+            color: white;
+          }
+          input {
+            margin-right: 10%;
+            color: white;
+            width: 800px;
+          }
+        }
+      }
+    }
+  }
+}

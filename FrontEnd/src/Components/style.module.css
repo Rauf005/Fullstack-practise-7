@@ -1,9 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-.end{
+  }
+  
+  
+  .end {
     background-color: #333333;
     color: #878787;
     display: flex;
@@ -11,47 +13,87 @@
     align-items: center;
     padding: 20px;
     font-size: 18px;
-}
-.end p::selection {
-    background-color: black;  
-    color: white;            
-}
-
-.navbar{
-    
+  }
+  
+  .end p::selection {
+    background-color: black;
+    color: white;
+  }
+  
+  .navbar {
     width: 80%;
     margin: 0 auto;
-   
-    .nav{
-        width: 80%;
-      
-        padding: 20px;
-        z-index: 2;
-        position: fixed;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    div{
-        display: flex;
-        align-items: center;
-    justify-content: center;
-    gap: 50%;
+  }
+  
+  .nav {
+    width: 80%;
+    padding: 20px;
+    z-index: 2;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     
-    }
-.add{
+    top: 0; 
+  }
+  
+  .nav div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; 
+  }
+  
+  .add {
     border: none;
     color: white;
     background-color: #640d79;
     padding: 10px 15px;
     font-size: 16px;
     border-radius: 5px;
-}
-    .side{
-        display: none;
+  }
+  
+  .bar {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+  }
+  
+ 
+  .side {
+    position: fixed; 
+    top: 0;
+    left: -250px;
+    width: 250px; 
+    height: 100%;
+    background-color: white; 
+    transition: transform 0.3s ease-in-out; 
+    z-index: 1000; 
+  }
+  
+  .side.open {
+    transform: translateX(250px);
+  }
+  
+  .side ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 60px; 
+  }
+  
+  .side li {
+    padding: 15px;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  
+  
+
+  @media (max-width: 768px) {
+    .nav {
+      flex-direction: column; 
     }
-    .bar:hover .side{
-        display: block;
-        
-    }
-}
+  }
+  
